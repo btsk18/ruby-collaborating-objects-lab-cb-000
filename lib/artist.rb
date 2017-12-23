@@ -14,7 +14,6 @@ class Artist
   end
 
   def save
-    binding.pry
     if @@all.any? { |artist| artist.name == @name } == false
       @@all << self
     end
