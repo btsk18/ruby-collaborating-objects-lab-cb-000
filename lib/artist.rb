@@ -14,7 +14,6 @@ class Artist
   end
 
   def save
-    binding.pry
     @@all << self
   end
 
