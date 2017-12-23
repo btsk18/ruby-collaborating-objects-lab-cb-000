@@ -11,7 +11,7 @@ class MP3Importer
   def import
     files.each { |file|
       split = file.split(" - ")
-      Song.new(split[1])
+      song = Song.new(split[1])
       Artist.find_or_create_by_name(split.first).save
     }
   end
