@@ -9,6 +9,6 @@ class Song
   end
 
   def self.new_by_filename(filename)
-    Song.new(filename.sub(/.*\/+/, ''))
+    Song.new(filename.sub(/.*\/+/, '').split(" - ")[1])
   end
 end
