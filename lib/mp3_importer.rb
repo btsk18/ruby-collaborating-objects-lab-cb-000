@@ -11,6 +11,7 @@ class MP3Importer
   def import
     files.each { |file|
       split = file.split(" - ")
+      binding.binding.pry
       Artist.new(split.first).save
     }
   end
