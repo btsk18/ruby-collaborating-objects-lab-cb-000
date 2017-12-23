@@ -14,6 +14,7 @@ class Artist
   end
 
   def save
+    @@all.any? { |artist| artist.name == @name }
     @@all << self
   end
 
